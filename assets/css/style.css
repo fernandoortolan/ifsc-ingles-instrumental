@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #96acea;
+    --secondary-color: #183664;
+
+    --font-sans: 'IBM Plex Sans', sans-serif;
+    --font-serif: 'IBM Plex Serif', serif;
+
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 30rem;
+    
+    background-color: var(--primary-color);
+
+    color: var(--secondary-color);
+
+    font-family: var(--font-sans);
+    font-size: 1.6rem;
+}
+
+#btChangeTheme {
+    position: absolute;
+    bottom: calc(100% - 5rem);
+    left: calc(100% - 14.4rem);
+
+    width: 12.8rem;
+
+    background: var(--secondary-color);
+
+    border: none;
+
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    text-align: center;
+
+    padding-block: .8rem;
+
+    cursor: pointer;
+}
+
+.wrapper {
+    width: min(60rem, 100%);
+    min-width: 30rem;
+
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.content p {
+    line-height: 150%;
+}
+
+.focus {
+    background-color: var(--secondary-color);
+
+    color: var(--primary-color);
+}
+
+.block {
+    display: block;
+}
+
+.opening-tag::before {
+    content: '<';
+}
+
+.opening-tag::after {
+    content: '>';
+}
+
+.closing-tag::before {
+    content: '</';
+}
+
+.closing-tag::after {
+    content: '>';
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 1.6rem;
+}
+
+h1 {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
+
+    margin-bottom: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+
+    margin-bottom: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+
+    margin-bottom: 1.8rem;
+}
+
+section {
+    padding-block: 9.6rem;
+}
+
+li {
+    margin-bottom: 1.6rem;
+    margin-left: 3.6rem;
+}
+
+img {
+    width: min(560px, 100%);
+
+    margin-block: 1.6rem;
+}
+
+footer .block {
+    margin-bottom: .6rem;
+}
+
+footer p {
+    margin: 0;
+}
