@@ -8,7 +8,7 @@
 :root {
     --primary-color: #96acea;
     --secondary-color: #183664;
-
+    
     --font-sans: 'IBM Plex Sans', sans-serif;
     --font-serif: 'IBM Plex Serif', serif;
 
@@ -19,55 +19,71 @@ body {
     min-width: 30rem;
     
     background-color: var(--primary-color);
-
+    
     color: var(--secondary-color);
-
+    
     font-family: var(--font-sans);
     font-size: 1.6rem;
+}
+
+section {
+    padding-block: 9.6rem;
+}
+
+.wrapper {
+    width: min(60rem, 100%);
+    min-width: 30rem;
+    
+    margin-inline: auto;
+    padding-inline: 2rem;
 }
 
 #btChangeTheme {
     position: absolute;
     bottom: calc(100% - 5rem);
     left: calc(100% - 14.4rem);
-
+    
     width: 12.8rem;
-
+    
     background: var(--secondary-color);
-
+    
     border: none;
-
+    
     font-family: var(--font-sans);
     font-size: 1.4rem;
     font-weight: 700;
-
+    
     text-align: center;
-
+    
     padding-block: .8rem;
-
+    
     cursor: pointer;
 }
 
-.wrapper {
-    width: min(60rem, 100%);
-    min-width: 30rem;
-
-    margin-inline: auto;
-    padding-inline: 2rem;
+.focus {
+    background-color: var(--secondary-color);
+    
+    color: var(--primary-color);
 }
 
 .content p {
     line-height: 150%;
 }
 
-.focus {
-    background-color: var(--secondary-color);
-
-    color: var(--primary-color);
+.last-child {
+    margin-bottom: 0;
 }
 
 .block {
     display: block;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .opening-tag::before {
@@ -86,12 +102,12 @@ body {
     content: '>';
 }
 
-.bold {
-    font-weight: 700;
-}
+.emoji {
+    font-size: 3.2rem;
 
-.italic {
-    font-style: italic;
+    text-align: left;
+
+    margin-block: 1.6rem;
 }
 
 p {
@@ -123,10 +139,6 @@ h4 {
     margin-bottom: 1.8rem;
 }
 
-section {
-    padding-block: 9.6rem;
-}
-
 li {
     margin-bottom: 1.6rem;
     margin-left: 3.6rem;
@@ -142,10 +154,18 @@ footer h4, footer span.bold {
     font-family: var(--font-serif);
 }
 
-footer p {
-    margin: 0;
+footer span.block {
+    margin-bottom: .6rem;
 }
 
-footer .block {
-    margin-bottom: .6rem;
+footer .thanks {
+    font-family: var(--font-serif);
+
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    span.emoji, .thanks {
+        display: none;
+    }
 }
