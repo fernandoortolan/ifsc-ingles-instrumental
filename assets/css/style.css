@@ -138,10 +138,14 @@ img {
     margin-block: 1.6rem;
 }
 
-footer .block {
-    margin-bottom: .6rem;
+footer h4, footer span.bold {
+    font-family: var(--font-serif);
 }
 
 footer p {
     margin: 0;
+}
+
+footer .block {
+    margin-bottom: .6rem;
 }
