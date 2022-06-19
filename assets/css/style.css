@@ -30,12 +30,46 @@ section {
     padding-block: 9.6rem;
 }
 
-.wrapper {
-    width: min(60rem, 100%);
-    min-width: 30rem;
+h1 {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
     
-    margin-inline: auto;
-    padding-inline: 2rem;
+    margin-bottom: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+
+    margin-bottom: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    
+    margin-bottom: 1.8rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+
+    line-height: 150%;
+}
+
+li {
+    margin-bottom: 1.6rem;
+    margin-left: 3.6rem;
+}
+
+img {
+    width: min(560px, 100%);
+
+    margin-block: 1.6rem;
 }
 
 #btChangeTheme {
@@ -45,7 +79,7 @@ section {
     
     width: 12.8rem;
     
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     
     border: none;
     
@@ -60,18 +94,18 @@ section {
     cursor: pointer;
 }
 
+.wrapper {
+    width: min(60rem, 100%);
+    min-width: 30rem;
+    
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
 .focus {
     background-color: var(--secondary-color);
     
     color: var(--primary-color);
-}
-
-.content p {
-    line-height: 150%;
-}
-
-.last-child {
-    margin-bottom: 0;
 }
 
 .block {
@@ -102,52 +136,8 @@ section {
     content: '>';
 }
 
-.emoji {
-    font-size: 3.2rem;
-
-    text-align: left;
-
-    margin-block: 1.6rem;
-}
-
-p {
-    margin-bottom: 1.6rem;
-}
-
-h1 {
-    font-family: var(--font-serif);
-    font-size: 3.2rem;
-
-    margin-bottom: 3.2rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-
-    margin-bottom: 2.4rem;
-}
-
-h3 {
-    font-size: 2rem;
-
-    margin-bottom: 2rem;
-}
-
-h4 {
-    font-size: 1.8rem;
-
-    margin-bottom: 1.8rem;
-}
-
-li {
-    margin-bottom: 1.6rem;
-    margin-left: 3.6rem;
-}
-
-img {
-    width: min(560px, 100%);
-
-    margin-block: 1.6rem;
+.last-child {
+    margin-bottom: 0;
 }
 
 footer h4, footer span.bold {
@@ -156,16 +146,4 @@ footer h4, footer span.bold {
 
 footer span.block {
     margin-bottom: .6rem;
-}
-
-footer .thanks {
-    font-family: var(--font-serif);
-
-    margin-bottom: 3.2rem;
-}
-
-@media (min-width: 768px) {
-    span.emoji, .thanks {
-        display: none;
-    }
 }
